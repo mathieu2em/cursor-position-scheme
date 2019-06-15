@@ -6,7 +6,6 @@
 	(let loop ((c (list (get))))
 	  (if (not (char=? (car c) stop-car))
 	      (begin
-		(pp c)
 		(loop (cons (get) c)))
 	      (if (pair? c)
 		      (string->number (list->string (reverse (cdr c))))
